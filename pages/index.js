@@ -1,9 +1,17 @@
 // our-domain.com
+import Layout from "../components/Layout"
 
 
 const Home = () => {
   return (
-    <div>Home Page</div>
+    <Layout>
+    <div>
+      <h1>Products</h1>
+      <ul>
+        <li>1</li>
+      </ul>
+    </div>
+    </Layout>
   )
 }
 
