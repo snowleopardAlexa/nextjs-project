@@ -14,6 +14,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Store } from "../utils/Store";
 import { useContext } from "react";
+import Cookies from "js-cookie";
 
 const Layout = ({ description, title, children }) => {
   //context
@@ -52,6 +53,9 @@ const Layout = ({ description, title, children }) => {
   // dark mode function
   const darkModeChangeHandler = () => {
     dispatch({ type: darkMode ? "DARK_MODE_OFF" : "DARK_MODE_ON" });
+  // after refreshing the web - changed mode stays on - js-cookie
+    const newDarkMode = !darkMode
+    Cookies.set('darkMode', newDarkMode ? 'ON' : 'OFF')
   };
 
   return (
