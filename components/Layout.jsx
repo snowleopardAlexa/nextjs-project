@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 import { AppBar, Toolbar, Typography, Container, Link } from "@material-ui/core"
 import useStyles from '../utils/styles'
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
 
   const classes = useStyles()  
 
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <>
     <div>
       <Head>
-        <title>Apple Store</title>
+        <title>{title ? `${title} - Apple` : 'BigApple'}</title>
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
