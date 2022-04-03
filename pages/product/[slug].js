@@ -9,7 +9,6 @@ import {
   List,
   ListItem,
   Typography,
-  Item,
 } from "@material-ui/core";
 import { products } from "../../utils/data";
 import Layout from "../../components/Layout";

@@ -1,5 +1,4 @@
 // our-domain.com
-import { ClassNames } from "@emotion/react"
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from "@material-ui/core"
 import NextLink from "next/link"
 import Layout from "../components/Layout"
