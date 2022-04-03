@@ -1,11 +1,25 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { AppBar, Toolbar, Typography, Container, Link } from "@material-ui/core"
+import { AppBar, Toolbar, Typography, Container, createMuiThemek, Link } from "@material-ui/core"
 import useStyles from '../utils/styles'
 
-const Layout = ({ title, children }) => {
+const Layout = ({ description, title, children }) => {
 
+  const theme = createMuiTheme({
+    typography: {
+      h1: {
+        fontSize: '1.6rem',
+        fontWeight: 400,
+        margin: '1rem 0'
+      },
+      h2: {
+        fontSisze: '1.4rem',
+        fontWeight: 400,
+        margin: '1rem 0'
+      }
+    }
+  })
   const classes = useStyles()  
 
   return (
@@ -13,7 +27,9 @@ const Layout = ({ title, children }) => {
     <div>
       <Head>
         <title>{title ? `${title} - Apple` : 'BigApple'}</title>
+        {description && <meta name="description" content={description}></meta>}
       </Head>
+      <ThemeProvider>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
           <NextLink href="/" passHref>
@@ -35,6 +51,7 @@ const Layout = ({ title, children }) => {
           </div>
         </Toolbar>
       </AppBar>
+      </ThemeProvider>
       <Container className={classes.main}>
           {children}
       </Container>
