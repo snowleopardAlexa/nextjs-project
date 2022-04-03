@@ -9,6 +9,9 @@ const useStyles = makeStyles({
             marginLeft: 10,
         }
     },
+    grow: {
+      flex: 1
+    },
     main: {
         minHeight: '80vh'
     },

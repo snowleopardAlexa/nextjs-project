@@ -1,7 +1,4 @@
-// object
-const data = {
-  // array
-  products: [
+  export const products = [
     {
       name: "IPad Pro 13",
       category: "IPads",
@@ -36,26 +33,36 @@ const data = {
       description: "IPad Hold Hand",
     },
     {
-      name: "IPad Pro Stand",
-      category: "IPads",
-      image: "/images/ipad-stand.png",
+      name: "IPad Pro SE",
+      category: "IPhones",
+      image: "/images/iphone-se.png",
       price: 450,
       brand: "Apple",
       raiting: 6.5,
       numReviews: 56,
       countInStock: 200,
-      description: "IPad Pro Stand",
+      description: "IPad Pro SE",
     },
     {
-      name: "IPad Pro Touch",
-      category: "IPads",
-      image: "/images/ipad-touch.png",
+      name: "IPhone Pro 13",
+      category: "IPhones",
+      image: "/images/iphone-13.png",
       price: 800,
       brand: "Apple",
       raiting: 7.5,
       numReviews: 100,
       countInStock: 20,
-      description: "IPad Pro Touch",
+      description: "IPad Pro 13",
     },
-  ],
-};
+    {
+      name: "IPhone Pro 17",
+      category: "IPhones",
+      image: "/images/iphone-17.png",
+      price: 800,
+      brand: "Apple",
+      raiting: 9.5,
+      numReviews: 1000,
+      countInStock: 23,
+      description: "IPad Pro 17",
+    },
+  ]
