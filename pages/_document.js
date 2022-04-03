@@ -22,6 +22,7 @@ export default class MyDocument extends Document {
   }
 }
 
+// material-ui styles works after re-freshing the webpage
 MyDocument.getInitialProps = async (ctx) => {
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
