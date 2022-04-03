@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
         <Toolbar>
           <NextLink href="/" passHref>
            <Link>
-          <Typography>
+          <Typography className="brand">
              <Image src="/apple.svg" width="40px" height="40px" alt="apple-logo" />
           </Typography>
           </Link> 

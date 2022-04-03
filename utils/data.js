@@ -1,6 +1,7 @@
   export const products = [
     {
       name: "IPad Pro 13",
+      slug: "ipad-pro-13",
       category: "IPads",
       image: "/images/ipad-13.png",
       price: 400,
@@ -12,6 +13,7 @@
     },
     {
       name: "IPad Pro 2020",
+      slug: "ipad-pro-2020",
       category: "IPads",
       image: "/images/ipad-2020.png",
       price: 600,
@@ -23,6 +25,7 @@
     },
     {
       name: "IPad Hold Hand",
+      slug: "ipad-hold-hand",
       category: "IPads",
       image: "/images/ipad-hand.png",
       price: 350,
@@ -34,6 +37,7 @@
     },
     {
       name: "IPad Pro SE",
+      slug: "iphone-pro-se",
       category: "IPhones",
       image: "/images/iphone-se.png",
       price: 450,
@@ -45,6 +49,7 @@
     },
     {
       name: "IPhone Pro 13",
+      slug: "iphone-pro-13",
       category: "IPhones",
       image: "/images/iphone-13.png",
       price: 800,
@@ -56,6 +61,7 @@
     },
     {
       name: "IPhone Pro 17",
+      slug: "iphone-pro-17",
       category: "IPhones",
       image: "/images/iphone-17.png",
       price: 800,

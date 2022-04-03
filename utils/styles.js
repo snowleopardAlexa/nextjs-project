@@ -9,6 +9,9 @@ const useStyles = makeStyles({
             marginLeft: 10,
         }
     },
+    brand: {
+
+    },
     grow: {
       flex: 1
     },
